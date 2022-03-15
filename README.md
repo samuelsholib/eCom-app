@@ -1,3 +1,2 @@
 # eCom-app
-
-first repo as official engineer
+Client level project
