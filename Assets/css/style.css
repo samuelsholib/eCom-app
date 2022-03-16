@@ -9,6 +9,7 @@
   
   /* Style the header */
   header {
+    background-image: url('https://source.unsplash.com/1600x900/?nature,outfit');
     background-color: #666;
     padding: 30px;
     text-align: center;
@@ -60,5 +61,8 @@
       width: 100%;
       height: auto;
     }
+  }
+  a:hover {
+    background-color: goldenrod;
   }
   
