@@ -20,9 +20,10 @@
         <a href="womenShirts.html">Womens Shirts</a> &nbsp; &#160; &#160;
         <a href="menShoes.html"> Mens Shoes</a> &nbsp; &#160; &#160;
         <a href="womenShoes.html"> Womens Shoes</a> &nbsp; &#160; &#160;
-        <a href="kids.html"> Kids outfit</a> &nbsp; &#160; &#160;
+        <a href="kids.html"> Kids Accessories</a> &nbsp; &#160; &#160;
         <a href="signUp.html" id="btn">signUp</a> &nbsp; &#160; &#160;
-        <a href="login.html" id="btn">Login</a>
+        <a href="login.html" id="btn">Login</a> &nbsp; &#160; &#160;
+        <a href="login.html" id="btn">Cart</a>
     </Div>
     <div class="Search">
         <input type="text" placeholder="Search..">
@@ -33,7 +34,7 @@
     </div>
     <div class="sub-heading">
         <h2><u>On demand products</u></h2>
-        <h4>Below we have high quality products that are on high demand. <br> check them out before they are sold out!!!</h4>
+        <h4>Below we have high quality products that are on high demand right now. <br> check them out before they are sold out!!!</h4>
     </div>
 
     <section class="container">
@@ -41,22 +42,37 @@
             
             <img src="./Assets/images/shTie.png" alt="a jacket">
             <p>High quality shirt with blue and white stripes</p>
-            <button id="button"> Add to Cart</button>
+
+            <form action="?target=cart" method="post" accept-charset="utf-8" class="custom-add2cart">
+                <input type="hidden" name="target" value="cart" />
+                <input type="hidden" name="action" value="add" />
+                <input type="hidden" name="product_id" value="5" />
+                <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                    <button type="submit" class="btn regular-button regular-main-button add2cart submit">
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+             </form>
         </nav>
 
-        <article class="pant2">
-            <img src="./Assets/images/shirts.png" alt="">
-            <p>High quality shirts</p>
-            <button id="button"> Add to Cart</button>
-        </article>
         <aside class="men-shoe">
             <img src="./Assets/images/Mshoe7.png" alt="images">
             <p>High quality leather Shoes</p>
-            <button id="button"> Add to Cart</button>
+           
+            <form action="?target=cart" method="post" accept-charset="utf-8" class="custom-add2cart">
+                <input type="hidden" name="target" value="cart" />
+                <input type="hidden" name="action" value="add" />
+                <input type="hidden" name="product_id" value="5" />
+                <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                    <button type="submit" class="btn regular-button regular-main-button add2cart submit">
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+             </form>
         </aside>
     </section>
+    <script src="./Assets/js/script.js"></script>
     <footer>
-
         Copyright @Stylish Outfit LLC
     </footer>
 </body>
