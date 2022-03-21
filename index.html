@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="./ecom.js" async></script>
     <title>outfit-store</title>
 </head>
 <header>
@@ -14,34 +15,45 @@
 
 <body>
     <Div>
-        <a href="menPants.html"> Mens Pants</a> &nbsp; &#160; &#160;
-        <a href="menShirts.html"> Mens Shirts</a> &nbsp; &#160; &#160;
-        <a href="womenPants.html">Womens Pants</a> &nbsp; &#160; &#160;
-        <a href="womenShirts.html">Womens Shirts</a> &nbsp; &#160; &#160;
-        <a href="menShoes.html"> Mens Shoes</a> &nbsp; &#160; &#160;
-        <a href="womenShoes.html"> Womens Shoes</a> &nbsp; &#160; &#160;
-        <a href="kids.html"> Kids Accessories</a> &nbsp; &#160; &#160;
-        <a href="signUp.html" id="btn">signUp</a> &nbsp; &#160; &#160;
-        <a href="login.html" id="btn">Login</a> &nbsp; &#160; &#160;
-        <a href="login.html" id="btn">Cart</a>
+        <a href="views/menPants.html"> Mens Pants</a> &nbsp; &#160; &#160;
+        <a href="views/menShirts.html"> Mens Shirts</a> &nbsp; &#160; &#160;
+        <a href="views/womenPants.html">Womens Pants</a> &nbsp; &#160; &#160;
+        <a href="views/womenShirts.html">Womens Shirts</a> &nbsp; &#160; &#160;
+        <a href="views/menShoes.html"> Mens Shoes</a> &nbsp; &#160; &#160;
+        <a href="views/womenShoes.html"> Womens Shoes</a> &nbsp; &#160; &#160;
+        <a href="views/kids.html"> Kids Accessories</a> &nbsp; &#160; &#160;
+        <a href="views/signUp.html" id="btn">signUp</a> &nbsp; &#160; &#160;
+        <a href="views/login.html" id="btn">Login</a> &nbsp; &#160; &#160;
+
     </Div>
+    <div>
+        <!-- <h1>fa fa-shopping-cart</h1> -->
+
+        <i class="fa fa-shopping-cart"></i>
+        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+        <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+        <i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i>
+
+    </div>
     <div class="Search">
         <input type="text" placeholder="Search..">
         <button class="button">Search</button>
     </div>
-    <div >
+    <div>
         <h4>For specicific selections, please click the links above</h4>
     </div>
     <div class="sub-heading">
         <h2><u>On demand products</u></h2>
-        <h4>Below we have high quality products that are on high demand right now. <br> check them out before they are sold out!!!</h4>
+        <h4>Below we have high quality products that are on high demand right now. <br> check them out before they are
+            sold out!!!</h4>
     </div>
 
     <section class="container">
         <nav class="jacketOnBack">
-            
-            <img src="./Assets/images/shTie.png" alt="a jacket">
+
+            <img src="./Assets/images/shTie.png" alt="Mens-shirt">
             <p>High quality shirt with blue and white stripes</p>
+            <p>Price: $140</p>
 
             <form action="?target=cart" method="post" accept-charset="utf-8" class="custom-add2cart">
                 <input type="hidden" name="target" value="cart" />
@@ -52,13 +64,13 @@
                         <span>Add to cart</span>
                     </button>
                 </div>
-             </form>
+            </form>
         </nav>
 
         <aside class="men-shoe">
             <img src="./Assets/images/Mshoe7.png" alt="images">
             <p>High quality leather Shoes</p>
-           
+            <p>Price: $110</p>
             <form action="?target=cart" method="post" accept-charset="utf-8" class="custom-add2cart">
                 <input type="hidden" name="target" value="cart" />
                 <input type="hidden" name="action" value="add" />
@@ -68,7 +80,7 @@
                         <span>Add to cart</span>
                     </button>
                 </div>
-             </form>
+            </form>
         </aside>
     </section>
     <script src="./Assets/js/script.js"></script>
