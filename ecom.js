@@ -6,23 +6,23 @@ if (document.readyState == 'loading') {
 const signUp = document.getElementById('signUp')
 function onSignUp() {
     alert('you have signed up successfully');
-    window.location.href="/index.html";  
+    window.location.href = "/index.html";
 };
 
 const login = document.getElementById('login');
 
 
-function ItemsStore(){
+function ItemsStore() {
     var cartItems = document.getElementById("addToCart");
     localStorage.setItem("addToCart", cartItems.value);
-   }
+}
 
 
-   document.getElementById("submitBtn").addEventListener("click", myFunction);  
-       function loginFunction(){
-        alert('you are loggedIn');
-        window.location.replace("/index.html");
-       }
+document.getElementById("submitBtn").addEventListener("click", myFunction);
+function loginFunction() {
+    alert('you are loggedIn');
+    window.location.replace("/index.html");
+}
 
 function cartFunction() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -133,10 +133,10 @@ function deleteUser(id) {
 }
 
 
-function ItemsStore(){
-    var cartItems = document.getElementById("addToCart");
-    localStorage.setItem("addToCart", cartItems.value);
-   }
+function ItemsStore() {
+    var cartItems = document.getElementsByClassName("btn-primary");
+    localStorage.setItem("btn-primary", cartItems.value);
+}
 
 //    var storedProducts = localStorage.getItem("btn-purchase");
 // function store(){
