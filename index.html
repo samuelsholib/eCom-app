@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <script src="./ecom.js" async></script>
     <title>outfit-store</title>
@@ -21,20 +22,11 @@
         <a href="views/womenShirts.html">Womens Shirts</a> &nbsp; &#160; &#160;
         <a href="views/menShoes.html"> Mens Shoes</a> &nbsp; &#160; &#160;
         <a href="views/womenShoes.html"> Womens Shoes</a> &nbsp; &#160; &#160;
-        <a href="views/kids.html"> Kids Accessories</a> &nbsp; &#160; &#160;
-        <a href="views/signUp.html" id="btn">signUp</a> &nbsp; &#160; &#160;
-        <a href="views/login.html" id="btn">Login</a> &nbsp; &#160; &#160;
-
+        <a href="views/kids.html"> Kids Accessories</a> &nbsp; &#160; &#160; &#160; &#160; 
+        <a href="views/signUp.html" id="btn">signUp</a> &nbsp; &#160; &#160; &#160; &#160; &#160;
+        <a href="views/login.html" id="btn">Login</a> &nbsp; &#160; &#160; &#160;
+        <i class="fa fa-shopping-cart" style="font-size:34px"></i>
     </Div>
-    <div>
-        <!-- <h1>fa fa-shopping-cart</h1> -->
-
-        <i class="fa fa-shopping-cart"></i>
-        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
-        <i class="fa fa-shopping-cart" style="font-size:36px"></i>
-        <i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i>
-
-    </div>
     <div class="Search">
         <input type="text" placeholder="Search..">
         <button class="button">Search</button>
@@ -53,7 +45,7 @@
 
             <img src="./Assets/images/shTie.png" alt="Mens-shirt">
             <p>High quality shirt with blue and white stripes</p>
-            <p>Price: $140</p>
+            <p class="item-price">Price: $140</p>
 
             <form action="?target=cart" method="post" accept-charset="utf-8" class="custom-add2cart">
                 <input type="hidden" name="target" value="cart" />
@@ -63,6 +55,10 @@
                     <button type="submit" class="btn regular-button regular-main-button add2cart submit">
                         <span>Add to cart</span>
                     </button>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
                 </div>
             </form>
         </nav>
@@ -79,11 +75,16 @@
                     <button type="submit" class="btn regular-button regular-main-button add2cart submit">
                         <span>Add to cart</span>
                     </button>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
                 </div>
             </form>
         </aside>
     </section>
-    <script src="./Assets/js/script.js"></script>
+
+    <!-- <script src="./Assets/js/script.js"></script> -->
     <footer>
         Copyright @Stylish Outfit LLC
     </footer>
