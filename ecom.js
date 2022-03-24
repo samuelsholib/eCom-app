@@ -134,8 +134,8 @@ function deleteUser(id) {
 
 
 function ItemsStore() {
-    var cartItems = document.getElementsByClassName("btn-primary");
-    localStorage.setItem("btn-primary", cartItems.value);
+    var cartItems = document.getElementsByClassName("add2cart");
+    localStorage.setItem("add2cart", cartItems.value);
 }
 
 //    var storedProducts = localStorage.getItem("btn-purchase");
@@ -143,3 +143,35 @@ function ItemsStore() {
 //     var storedProducts= document.getElementById("btn-purchase");
 //     localStorage.setItem("btn-purchase", storedProducts.value);
 //    }
+
+
+
+$(document).ready(function() {
+    //listen for saveBtn clicks
+    $('.btn-danger').on('click', function() {
+        // get nearby values
+        var value = $(this).siblings('.cart-quantity').val();
+        var time = $(this).parents().attr('id');
+        console.log('Todays' + value)
+
+        // save in localStorsge
+        localStorage.setItem(time, value);
+        console.log('Today@' + time)
+            // show notification that item was saved to localStorage by adding class 'show'
+        $('.notification').addClass('show');
+        setTimeout(function() {
+            $('.notification').removeClass('show');
+        }, 5000);
+
+    });
+
+$('#hour-9 .description').val(localStorage.getItem('hour-9'));
+    $('#hour-10 .description').val(localStorage.getItem('hour-10'));
+    $('#hour-11 .description').val(localStorage.getItem('hour-11'));
+    $('#hour-12 .description').val(localStorage.getItem('hour-12'));
+    $('#hour-13 .description').val(localStorage.getItem('hour-13'));
+    $('#hour-14 .description').val(localStorage.getItem('hour-14'));
+    $('#hour-15 .description').val(localStorage.getItem('hour-15'));
+    $('#hour-16 .description').val(localStorage.getItem('hour-16'));
+    $('#hour-17 .description').val(localStorage.getItem('hour-17'));
+});
