@@ -5,7 +5,7 @@ if (document.readyState == 'loading') {
 }
 const signUp = document.getElementById('signUp')
 function onSignUp() {
-    alert('you have signed up successfully');
+    alert('you have successfully signed up');
     window.location.href = "/index.html";
 };
 
@@ -22,6 +22,18 @@ document.getElementById("submitBtn").addEventListener("click", myFunction);
 function loginFunction() {
     alert('you are loggedIn');
     window.location.replace("/index.html");
+}
+
+const items = 0;
+function itemsInCart() {
+    let ItemQuantity = document.getElementById('cart')
+    var addButton = document.getElementsByClassName('btn-danger') 
+    if (ItemQuantity === null){
+        alert('No item in the cart so far')
+    }
+    else {
+        'You have'+ items++;
+    }
 }
 
 function cartFunction() {
@@ -138,17 +150,9 @@ function ItemsStore() {
     localStorage.setItem("add2cart", cartItems.value);
 }
 
-//    var storedProducts = localStorage.getItem("btn-purchase");
-// function store(){
-//     var storedProducts= document.getElementById("btn-purchase");
-//     localStorage.setItem("btn-purchase", storedProducts.value);
-//    }
-
-
-
-$(document).ready(function() {
+$(document).ready(function () {
     //listen for saveBtn clicks
-    $('.btn-danger').on('click', function() {
+    $('.btn-danger').on('click', function () {
         // get nearby values
         var value = $(this).siblings('.cart-quantity').val();
         var time = $(this).parents().attr('id');
@@ -157,21 +161,11 @@ $(document).ready(function() {
         // save in localStorsge
         localStorage.setItem(time, value);
         console.log('Today@' + time)
-            // show notification that item was saved to localStorage by adding class 'show'
+        // show notification that item was saved to localStorage by adding class 'show'
         $('.notification').addClass('show');
-        setTimeout(function() {
+        setTimeout(function () {
             $('.notification').removeClass('show');
         }, 5000);
 
     });
-
-$('#hour-9 .description').val(localStorage.getItem('hour-9'));
-    $('#hour-10 .description').val(localStorage.getItem('hour-10'));
-    $('#hour-11 .description').val(localStorage.getItem('hour-11'));
-    $('#hour-12 .description').val(localStorage.getItem('hour-12'));
-    $('#hour-13 .description').val(localStorage.getItem('hour-13'));
-    $('#hour-14 .description').val(localStorage.getItem('hour-14'));
-    $('#hour-15 .description').val(localStorage.getItem('hour-15'));
-    $('#hour-16 .description').val(localStorage.getItem('hour-16'));
-    $('#hour-17 .description').val(localStorage.getItem('hour-17'));
 });

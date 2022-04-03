@@ -9,7 +9,7 @@
     margin-left: 10px;
   }
   
-  /* Style the header */
+ 
   header {
     background-image: url('https://source.unsplash.com/1600x900/?nature,outfit');
     background-color: #666;
@@ -59,7 +59,7 @@
       height: auto;
     } */
 
-    .button {
+    .btn {
       background-color: #4CAF50; /* Green */
       border: none;
       color: white;
@@ -69,6 +69,24 @@
       /* display: inline-block; */
       font-size: 16px;
     }
+    .button {
+      background-color: blue; /* Green */
+      border: none;
+      color: black;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+    }
+    .placeholder {
+      border-radius: 1rem;
+      color: white;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+    } 
   
   a:hover {
     background-color: goldenrod;
