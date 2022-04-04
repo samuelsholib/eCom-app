@@ -149,23 +149,3 @@ function ItemsStore() {
     var cartItems = document.getElementsByClassName("add2cart");
     localStorage.setItem("add2cart", cartItems.value);
 }
-
-$(document).ready(function () {
-    //listen for saveBtn clicks
-    $('.btn-danger').on('click', function () {
-        // get nearby values
-        var value = $(this).siblings('.cart-quantity').val();
-        var time = $(this).parents().attr('id');
-        console.log('Todays' + value)
-
-        // save in localStorsge
-        localStorage.setItem(time, value);
-        console.log('Today@' + time)
-        // show notification that item was saved to localStorage by adding class 'show'
-        $('.notification').addClass('show');
-        setTimeout(function () {
-            $('.notification').removeClass('show');
-        }, 5000);
-
-    });
-});
